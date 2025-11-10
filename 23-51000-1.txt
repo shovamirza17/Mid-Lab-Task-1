@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    string name[100];
+    int marks[100];
+
+    cout << "Enter number of students: ";
+    cin >> n;
+
+
+    for (int i = 0; i < n; i++) {
+        cout << "Enter student name: ";
+        cin >> name[i];
+        cout << "Enter marks: ";
+        cin >> marks[i];
+    }
+
+    cout << "\nData saved successfully!\n";
+
+
+    cout << "\nReading data:\n";
+    for (int i = 0; i < n; i++) {
+        cout << name[i] << " " << marks[i] << endl;
+    }
+
+    return 0;
+}
